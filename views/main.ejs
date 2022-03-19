@@ -1,0 +1,386 @@
+<%- include("partials/header"); -%>
+    <header class ="highestZOrder flavorColor">
+      <div class="headerContent baseMargin">
+        <div class = "logo buttonHover" onclick="scrollScreen('Home',false)">
+          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 280 60" class="dimensionFit">
+            <text id="HAKIM_OTTEY" data-name="HAKIM OTTEY" transform="translate(0 49)" fill="#fff" font-size="45" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">HAKIM OTTEY</tspan></text>
+          </svg>
+        </div>
+      <div class = "navigation">
+        <nav class="bigNav">
+          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Home',false)">Home</a>
+          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Experience',false)">Experience</a>
+          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Skills',false)">Skills</a>
+          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Projects',false)">Projects</a>
+          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('About',false)">About Me</a>
+          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Contact',false)">Contact</a>
+          <a class="centerDiv navButtons buttonHover noLinkDecoration" href="https://drive.google.com/file/d/1FFNqQNlm3VLe7uRp3Vy_WSLNpbTgjEne/view?usp=sharing" rel="noreferrer noopener" target="_blank">Resume</a>
+        </nav>
+        <!-- Hamburger Menu -->
+        <div class="dropdownContainer skillIconContainer smallNav buttonHover">
+          <svg class="blackBackgroundIcon dimensionFit hoverIcon" xmlns="http://www.w3.org/2000/svg" width="47.5" height="38" viewBox="0 0 47.5 38">
+            <g id="_1814109_hamburger_menu_icon" data-name="1814109_hamburger_menu_icon" transform="translate(-8.2 -13)">
+              <g id="Navicon" transform="translate(330 232)">
+                <path id="Fill-19" d="M-321.8-219h47.5v6.3h-47.5Z" fill="#fff"/>
+                <path id="Fill-20" d="M-321.8-203.2h47.5v6.4h-47.5Z" fill="#fff"/>
+                <path id="Fill-21" d="M-321.8-187.3h47.5v6.3h-47.5Z" fill="#fff"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        </div>
+        </div>
+    </header>
+      <div class="mobileNavScreen inactive">
+        <div class="backgroundBlur"></div>
+        <div class ="mobileNav">
+          <ul>
+          <li>
+            <a class="centerDiv mobileNavButtons buttonHover" onclick="scrollScreen('Home',false)">
+              <p>Home</p>
+            </a>
+            <hr />
+          </li>
+          <li>
+            <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('Experience',true)">
+              <p>Experience</p>
+            </a>
+            <hr />
+          </li>
+          <li>
+            <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('Skills',true)">
+              <p>Skills</p>
+            </a>
+            <hr />
+          </li>
+          <li>
+            <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('Projects',true)">
+              <p>Projects</p>
+            </a>
+            <hr />
+          </li>
+          <li>
+            <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('About',true)">
+              <p>About Me</p>
+            </a>
+            <hr />
+          </li>
+          <li>
+            <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('Contact',true)">
+              <p>Contact</p>
+            </a>
+            <hr />
+          </li>
+          <li>
+            <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover noLinkDecoration" href="https://drive.google.com/file/d/1FFNqQNlm3VLe7uRp3Vy_WSLNpbTgjEne/view?usp=sharing" rel="noreferrer noopener" target="_blank">
+              <p>Resume</p>
+            </a>
+            <hr />
+          </li>
+          </ul>
+        </div>
+      </div>
+      <div class = "introduction" id="Home">
+        <div class = "content forceCenter baseMargin">
+          <div class ="introSentence">
+            <h1 class ="blackBackgroundText bodyLarge2">Frontend, Backend, and Software Programmer at your service</h1>
+          </div>
+          <button type="button" name="button" class ="ProjectsJump flavorColor roundedBox raiseButton buttonHover" onclick="scrollScreen('Projects',true)">
+            <span class ="buttonContentContainer">
+              <span class ="callToActionContainer centerDiv">
+                <p class ="blackBackgroundText bodyLarge6">
+                  View My Work
+                </p>
+              </span>
+              <div class ="buttonIconContainer centerDiv">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="blackBackgroundIcon dimensionFit"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </div>
+            </span>
+          </button>
+        </div>
+        <!-- <img src="/images/intro.png" alt="Maynooth Wireframe" class ="introRoll"></img> -->
+      </div>
+      <!-- Talk about graduation and work experience -->
+      <div class = "block dropShadow infoBlock" id="Experience">
+        <div class ="cover forceCenter infoBlock">
+                    <h1 class ="blockLabel forceCenter bodyLarge3">Experience</h1>
+        </div>
+        <div class = "blockHeading forceCenter dropShadow infoBlock">
+          <div class="headingIconContainer forceCenter">
+            <svg class = "dimensionFit" id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon points="0,5 8,9 15,5.5 15,14 16,14 16,5 8,1 "/><polygon points="3,7.059 3,11.5 8,14 13,11.5 13,7.059 8,9.559 "/></svg>
+          </div>
+        </div>
+        <div class ="blockContent baseMargin">
+          <div class="timeline">
+                        <div class="line flavorColor"></div>
+            <ul>
+              <% experience.forEach(function(experiences){ %>
+                <li>
+                  <div class ="achievementType flavorColor circle">
+                    <div class ="achievementIconContainer">
+                      <% switch(experiences.type) {
+                        case "job": %>
+                        <svg id="work_black_24dp_1_" data-name="work_black_24dp (1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="achievementIcon blackBackgroundIcon dimensionFit">
+  <path id="Path_35" data-name="Path 35" d="M0,0H24V24H0Z" fill="none"/>
+  <path id="Path_36" data-name="Path 36" d="M22,6H16V4a2.006,2.006,0,0,0-2-2H10A2.006,2.006,0,0,0,8,4V6H2V21H22ZM14,6H10V4h4Z"/>
+</svg>
+
+                      <% break;
+                      case "schooling":%>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.136 82.173" class="achievementIcon blackBackgroundIcon dimensionFit">
+  <g id="_2205242_college_course_degree_education_university_icon" data-name="2205242_college_course_degree_education_university_icon" transform="translate(0 -1)">
+    <path id="Path_9" data-name="Path 9" d="M0,26.284,50.568,51.568,94.815,29.445V83.173h6.321V26.284L50.568,1Z"/>
+    <path id="Path_10" data-name="Path 10" d="M3,7.059V35.131l31.605,15.8,31.605-15.8V7.059l-31.605,15.8Z" transform="translate(15.963 32.24)"/>
+  </g>
+</svg>
+
+                      <% break;
+                      default: %>
+                      <svg id="work_black_24dp_1_" data-name="work_black_24dp (1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="achievementIcon blackBackgroundIcon dimensionFit">
+<path id="Path_35" data-name="Path 35" d="M0,0H24V24H0Z" fill="none"/>
+<path id="Path_36" data-name="Path 36" d="M22,6H16V4a2.006,2.006,0,0,0-2-2H10A2.006,2.006,0,0,0,8,4V6H2V21H22ZM14,6H10V4h4Z"/>
+</svg>
+
+                      <%break;} %>
+                    </div>
+                  </div>
+                  <div class ="inlineList achievementExplanation">
+                    <p class ="achievementName bodyLarge6 bold"><%=experiences.name%></p>
+                    <p class ="date normalBody italic"><%=experiences.company%></p>
+                    <p class ="date normalBody italic"><%=experiences.startDate%> - <%=experiences.endDate%></p>
+                    <p class ="normalBody"><%=experiences.explanation%></p>
+                  </div>
+                </li>
+              <% }) %>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Talk about skillset with languages, applications, frameworks, etc -->
+      <div class = "block dropShadow infoBlock" id="Skills">
+        <div class ="cover forceCenter infoBlock">
+                    <h1 class ="blockLabel forceCenter bodyLarge3">Skills</h1>
+        </div>
+        <div class = "blockHeading forceCenter dropShadow infoBlock">
+          <div class="headingIconContainer forceCenter">
+            <svg id="_172558_star_icon" data-name="172558_star_icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 101 101">
+              <rect id="Rectangle_17" data-name="Rectangle 17" fill="none"/>
+              <path id="Path_14" data-name="Path 14" d="M46.744,3.553,58.2,33.257l31.79,1.714L65.277,55.042l8.192,30.764L46.744,68.51l-26.727,17.3,8.194-30.764L3.5,34.97l31.79-1.714Z" transform="translate(3.54 3.593)" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <div class =" blockContent skillSet baseMargin">
+          <ul>
+            <% skills.forEach(function(skill){%>
+              <li class ="inlineList">
+                <div class ="skillName">
+                  <div class="skillIconContainer inlineList">
+                    <%- skill.icon %>
+                  </div>
+                  <p class ="inlineList"><%=skill.name%></p>
+                </div>
+                <div class ="skillMastery">
+                  <div class = "bar">
+                    <div style= "<%= `width:${skill.mastery%101}%;` %>" class ="amount flavorColor"></div>
+                  </div>
+                  <p>Mastery</p>
+                </div>
+              </li>
+            <%})%>
+          </ul>
+        </div>
+      </div>
+      <!-- Talk about projects that I had a place in current or in the past -->
+      <div class = "block dropShadow infoBlock" id="Projects">
+        <div class ="cover forceCenter infoBlock">
+                  <h1 class ="blockLabel forceCenter bodyLarge3">Projects</h1>
+        </div>
+        <div class = "blockHeading forceCenter dropShadow infoBlock">
+          <div class="headingIconContainer forceCenter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79 79">
+              <g id="Page-1" transform="translate(89 -454)">
+                <g id="Core" transform="translate(-89 454)">
+                  <g id="create" transform="translate(0 0)">
+                    <path id="Shape" d="M0,62.322V79H16.678L64.956,30.283,48.278,13.606,0,62.322ZM77.683,17.556a4.243,4.243,0,0,0,0-6.144L67.589,1.317a4.243,4.243,0,0,0-6.144,0l-7.9,7.9L70.222,25.894l7.461-8.339Z" fill-rule="evenodd"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class =" blockContent baseMargin">
+          <div class ="projects" id="projects">
+            <!-- Project Cell. Explains the project while showcasing /images of that project -->
+            <ul>
+              <% projects.forEach(function(project,index){%>
+                <li>
+                  <div class = "projectPresentation">
+                    <div class="projectBox">
+                      <div class ="imagePreviewBox roundedBox buttonHover" id="<%=`project-${index}`%>">
+                        <div class="initialPicture" main-media='<%= JSON.stringify(project.media[0])%>' media-list='<%=JSON.stringify(project.media)%>' > </div>
+                      </div>
+                      <div class = "imageReelBox">
+                        <ul class="imageReel">
+                          <%project.media.forEach(function(mediaFiles){ %>
+                            <li class="imageListSlot inlineList">
+                              <div class =" centerDiv imageSelector roundedBox raiseButton buttonHover typeImage" onclick="<%= mediaFiles.isVid == false ? `window.renderImage("https://drive.google.com/uc?id=${mediaFiles.driveID}","project-${+index}",${JSON.stringify(project.media)})`: `window.renderVideo("https://drive.google.com/file/d/${mediaFiles.driveID}/preview","project-${+index}")`%>"">
+                                <% if(mediaFiles.isVid){%>
+                                  <img src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=<%=`${mediaFiles.driveID}`%>" alt="Maynooth Wireframe" class="miniImage dimensionFit roundedBox clickableElementShadow"></img>
+                                <%} else{ %>
+                                  <img src="https://drive.google.com/uc?id=<%=`${mediaFiles.driveID}`%>" alt="Maynooth Wireframe" class="miniImage dimensionFit roundedBox clickableElementShadow"></img>
+                                <%} %>
+                              </div>
+                            </li>
+                          <%})%>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="projectBox">
+                        <div class ="projectNameBox">
+                          <h1 class="bodyLarge5 bold projectName"><%=project.name%></h1>
+                          <p class ="bodyLarge6"><%=project.dates %></p>
+                        </div>
+                        <div class ="projectDescriptionBox">
+                          <p class ="normalBody"><%=project.explanation %></p>
+                        </div>
+                        <div class="extras">
+                          <p>Skills Used</p>
+                          <ul>
+                            <% project.usedSkills.forEach(function(usedSkill){ %>
+                              <li class ="inlineList">
+                                <div class="skillIconContainer">
+                                  <%-usedSkill.icon %>
+                                </div>
+                              </li>
+                            <% })%>
+                          </ul>
+                          <br></br>
+                          <button type="button" name="button" class ="ProjectsJump flavorColor roundedBox clickableElementShadow raiseButton buttonHover" onclick= "window.renderLink(`<%= JSON.stringify(project.relatedLink) %>`)">
+                            <div class ="buttonContentContainer">
+                              <div class ="callToActionContainer centerDiv">
+                                <p class ="blackBackgroundText bodyLarge6">
+                                  Related Links
+                                </p>
+                              </div>
+                              <div class ="buttonIconContainer centerDiv">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="blackBackgroundIcon dimensionFit" viewBox="0 0 29.907 36.475">
+    <g id="Layer_44" data-name="Layer 44" transform="matrix(0.848, -0.53, 0.53, 0.848, -12.01, 5.745)">
+      <path id="Path_15" data-name="Path 15" d="M18.029,33.646H15.735A5.735,5.735,0,0,1,10,27.911V21.029a1.147,1.147,0,0,1,2.294,0v6.882a3.441,3.441,0,0,0,3.441,3.441h2.294a3.441,3.441,0,0,0,3.441-3.441V19.882a4.588,4.588,0,0,0-4.588-4.588,1.147,1.147,0,1,1,0-2.294,6.882,6.882,0,0,1,6.882,6.882v8.029a5.735,5.735,0,0,1-5.735,5.735Z" transform="translate(-0.635 8.442)" fill="#fff"/>
+      <path id="Path_16" data-name="Path 16" d="M16.882,21.646A6.882,6.882,0,0,1,10,14.764V6.735A5.735,5.735,0,0,1,15.735,1h2.294a5.735,5.735,0,0,1,5.735,5.735v6.882a1.147,1.147,0,0,1-2.294,0V6.735a3.441,3.441,0,0,0-3.441-3.441H15.735a3.441,3.441,0,0,0-3.441,3.441v8.029a4.588,4.588,0,0,0,4.588,4.588,1.147,1.147,0,0,1,0,2.294Z" transform="translate(-0.635 6.678)" fill="#fff"/>
+    </g>
+  </svg>
+                              </div>
+                            </div>
+                          </button>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+              <%}) %>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Talk about myself: what I am interested in, why I am doing this, etc -->
+      <div class = "block dropShadow infoBlock" id="About">
+        <div class ="cover forceCenter infoBlock">
+                          <h1 class ="blockLabel forceCenter bodyLarge3">About Me</h1>
+        </div>
+        <div class = "blockHeading forceCenter dropShadow infoBlock">
+          <div class="headingIconContainer forceCenter">
+            <svg id="person_black_24dp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.212 137.212">
+              <path id="Path_17" data-name="Path 17" d="M0,0H137.212V137.212H0Z" fill="none"/>
+              <path id="Path_18" data-name="Path 18" d="M49.737,49.737A22.869,22.869,0,1,0,26.869,26.869,22.862,22.862,0,0,0,49.737,49.737Zm0,11.434C34.473,61.172,4,68.833,4,84.04V95.475H95.475V84.04C95.475,68.833,65,61.172,49.737,61.172Z" transform="translate(18.869 18.869)"/>
+            </svg>
+          </div>
+        </div>
+        <div class =" blockContent skillSet baseMargin">
+          <div class ="aboutPreview centerDiv">
+              <p class ="aboutMeIntro bodyLarge6 ">Hakim Ottey</p>
+              <div class ="aboutMepic">
+                <img src="/images/face.jpg" alt="HTML" class ="dimensionFit circle clickableElementShadow"></img>
+              </div>
+              <p class ="aboutMeIntro bodyLarge6"><%= aboutMe.location %></p>
+          </div>
+          <div class =" aboutMeExplanation">
+            <p>
+              <%= aboutMe.bio %>
+            </p>
+          </div>
+          <div class ="imageList">
+            <ul>
+              <li>
+                <img>
+                </img>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Form -->
+      <div class = "block dropShadow infoBlock" id="Contact">
+        <div class ="cover forceCenter infoBlock">
+                  <h1 class ="blockLabel forceCenter bodyLarge3">Reach Out!</h1>
+        </div>
+        <div class = "blockHeading forceCenter dropShadow infoBlock">
+          <div class="headingIconContainer forceCenter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.155 102">
+              <g id="comment" transform="translate(0 -0.973)">
+                <g id="Group_33" data-name="Group 33" transform="translate(0 0.973)">
+                  <path id="Path_19" data-name="Path 19" d="M74.891,102.973a4.045,4.045,0,0,1-2.584-.908L45.25,79.828H9.746A9.9,9.9,0,0,1,0,69.862V10.773A9.773,9.773,0,0,1,9.746.973H94.378a9.763,9.763,0,0,1,9.777,9.8V69.862a9.891,9.891,0,0,1-9.777,9.966H78.916V98.906a4.049,4.049,0,0,1-2.31,3.678A3.978,3.978,0,0,1,74.891,102.973ZM9.746,9.1a1.6,1.6,0,0,0-1.559,1.674V69.862A1.758,1.758,0,0,0,9.746,71.7H46.708a4,4,0,0,1,2.568.9L70.791,90.294V75.724a4.055,4.055,0,0,1,4.1-4.021H94.378a1.837,1.837,0,0,0,1.652-1.84V10.773A1.676,1.676,0,0,0,94.378,9.1H9.746Z" transform="translate(0 -0.973)"/>
+                </g>
+              </g>
+            </svg>
+
+          </div>
+        </div>
+        <div class ="Email blockContent baseMargin">
+          <div class ="emailBlockHeight">
+          <div id="userInputFormBox" class= active">
+            <form  id="requestForm" class="formBox" method="POST" action="/send">
+              <div class= "formCell">
+                <div class="formTag centerDiv tagStyle">
+                  <p class =" blackBackgroundText bodyLarge6">Name</p>
+                </div>
+                <input  type="text" class ="field fieldStyle smallFieldStyle removeFocus requiredField" name="name"></input>
+              </div>
+              <div class= "formCell">
+                <div class="formTag centerDiv tagStyle">
+                  <p class ="blackBackgroundText bodyLarge6">Email</p>
+                </div>
+                <input  type="text" class ="field fieldStyle smallFieldStyle removeFocus requiredField" name="email"></input>
+              </div>
+              <div class= "formCell">
+                <div class="formTag centerDiv tagStyle">
+                  <p class ="blackBackgroundText bodyLarge6">Subject</p>
+                </div>
+                <input  type="text" class ="field fieldStyle smallFieldStyle removeFocus requiredField" name="subject"></input>
+              </div>
+              <div class= "formCell">
+                <div class="formTag centerDiv tagStyle">
+                  <p class ="blackBackgroundText bodyLarge6">Body</p>
+                </div>
+                <textarea  class ="longfield bigFieldStyle removeFocus requiredField" name="body">
+                </textarea>
+              </div>
+              <button id="submitFormButton" type="button" name="button" class ="ProjectsJump disabled roundedBox clickableElementShadow raiseButton buttonHover">
+                <div class ="buttonContentContainer">
+                  <div class ="callToActionContainer centerDiv">
+                    <p class ="blackBackgroundText bodyLarge6">
+                      Submit
+                    </p>
+                  </div>
+                  <div class ="buttonIconContainer centerDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" class="blackBackgroundIcon dimensionFit" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  </div>
+                </div>
+              </button>
+              <small>This site is protected by reCAPTCHA and the Google <a class="whiteBackgroundText" href="https://policies.google.com/privacy">Privacy Policy</a> and<a class ="whiteBackgroundText" href="https://policies.google.com/terms">Terms of Service</a> apply </small>
+            </form>
+          </div>
+          <div class="confirmationPage">
+          </div>
+        </div>
+        </div>
+      </div>
+<%- include("partials/footer"); -%>
