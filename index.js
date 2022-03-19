@@ -9,6 +9,7 @@ const nodemailer = require('nodemailer');
 const bodyparser = require('body-parser');
 const fetch = require('isomorphic-fetch');
 const app = express();
+const PORT = process.env.PORT || 3000;
 app.set('view engine','ejs');
 app.use(express.static("public"));
 app.use(bodyparser.urlencoded({extended:false}));
@@ -78,6 +79,6 @@ transporter.sendMail(mailOptions, function (error,info){
   res.send("good job");
 });
 });
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log("Server started on port 3000");
 });

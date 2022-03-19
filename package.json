@@ -17,5 +17,8 @@
     "isomorphic-fetch": "^3.0.0",
     "node-html-encoder": "^0.0.2",
     "nodemailer": "^6.7.2"
-  }
+  },
+  "engines": {
+  "node": "16.13.0"
+}
 }
