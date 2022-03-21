@@ -102,6 +102,7 @@ function onSubmit(token) {
             }
           }).done(function(response){
             ajaxLoading = false;
+            console.log(response);
             var googleResponse = response.google_response;
             if(googleResponse.action == 'submit' && googleResponse.success == true && googleResponse.score > 0.5){
               sendForm();
@@ -142,6 +143,7 @@ function sendForm(){
       url:"/send",
       data:$("#requestForm").serializeArray()
     }).done(function(response){
+      console.log(response);
       ajaxLoading = false;
       renderEmailSentResponse(true);
     });
