@@ -38,15 +38,16 @@ app.post("/verify",function(req,res){
 });
 app.post('/send',function (req,res){
   var etheral = process.env.ETHEREAL_PASS;
-  const output = `<p> You have a new contact request</p>
-  <h3>Contact Details</h3>
-  <ul>
-  <li>Name:${req.body.name}</li>
-  <li>Email:${req.body.email}</li>
-  <li>Subject:${req.body.subject}</li>
-  </ul>
-  <h3>Message</h3>
+  const output = `<p>Hi, ${req.body.name}! This response was generated because you sent an email to this address. I will try to respond as fast as a can, up to 1-3 days. Again, thank you for taking an interest in recruiting me for your companys project!</p>
+
+  <p>You wrote me this response:</p>
   <p>${req.body.body}</p>
+
+  <p>Have a great day and stay safe!</p>
+
+  <p>Hakim Ottey</p>
+  <p>hakimotteybusiness@gmail.com</p>
+  <p>${process.env.PHONE}</p>
   `;
   let transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",

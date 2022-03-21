@@ -275,4 +275,12 @@ module.exports = [
 `,
     mastery:85
   },
+  {
+    name:'Unity',
+    icon:`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path id="_4691514_unity_unity_3d_logo_icon" data-name="4691514_unity_unity 3d_logo_icon" d="M19.9,19.2,15.6,12l4.3-7.2L22,12Zm-9.5-.7L5,13.2h8.6l4.3,7.2-7.5-1.9Zm0-13.1,7.5-1.9-4.3,7.2H4.9c0,.1,5.5-5.3,5.5-5.3ZM21.4,0,11.6,2.5,10.1,5H7.2L0,12l7.2,7h2.9l1.4,2.5L21.3,24l2.6-9.5L22.5,12,24,9.5,21.4,0Z"/>
+</svg>
+`,
+    mastery:65
+  }
 ]
