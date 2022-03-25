@@ -9,10 +9,10 @@
       <div class = "navigation">
         <nav class="bigNav">
           <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Home',false)">Home</a>
-          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Experience',false)">Experience</a>
-          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Skills',false)">Skills</a>
+          <!-- <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Experience',false)">Experience</a> -->
           <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Projects',false)">Projects</a>
-          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('About',false)">About Me</a>
+          <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Skills',false)">Skills</a>
+          <!-- <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('About',false)">About Me</a> -->
           <a class="centerDiv navButtons buttonHover" onclick="scrollScreen('Contact',false)">Contact</a>
           <a class="centerDiv navButtons buttonHover noLinkDecoration" href="https://drive.google.com/file/d/1FFNqQNlm3VLe7uRp3Vy_WSLNpbTgjEne/view?usp=sharing" rel="noreferrer noopener" target="_blank">Resume</a>
         </nav>
@@ -41,9 +41,15 @@
             </a>
             <hr />
           </li>
-          <li>
+          <!-- <li>
             <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('Experience',true)">
               <p>Experience</p>
+            </a>
+            <hr />
+          </li> -->
+          <li>
+            <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('Projects',true)">
+              <p>Projects</p>
             </a>
             <hr />
           </li>
@@ -53,18 +59,12 @@
             </a>
             <hr />
           </li>
-          <li>
-            <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('Projects',true)">
-              <p>Projects</p>
-            </a>
-            <hr />
-          </li>
-          <li>
+          <!-- <li>
             <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('About',true)">
               <p>About Me</p>
             </a>
             <hr />
-          </li>
+          </li> -->
           <li>
             <a class="centerDiv mobileNavButtons whiteBackgroundText buttonHover" onclick="scrollScreen('Contact',true)">
               <p>Contact</p>
@@ -80,12 +80,27 @@
           </ul>
         </div>
       </div>
-      <div class = "introduction" id="Home">
-        <div class = "content forceCenter baseMargin">
-          <div class ="introSentence">
-            <h1 class ="blackBackgroundText bodyLarge2">Frontend, Backend, and Software Programmer at your service</h1>
+      <div class = "introduction infoBlock" id="Home">
+        <div class = "content forceCenter baseMargin introContent blockContent">
+          <div class="firstIntroDiv baseMargin">
+            <div class ="aboutMepic">
+              <img src="/images/face.jpg" alt="HTML" class ="dimensionFit circle clickableElementShadow"></img>
+            </div>
+            <div class =" aboutMeExplanation">
+              <p>
+                <%= aboutMe.bio %>
+              </p>
+            </div>
           </div>
-          <button type="button" name="button" class ="ProjectsJump flavorColor roundedBox raiseButton buttonHover" onclick="scrollScreen('Projects',true)">
+          <div class="secondIntroDiv baseMargin">
+            <video autoplay muted loop id="myVideo" class="introRoll">
+              <source src="images/project_reel.mp4" type="video/mp4" class="heroBarVideo reelSource">
+              </video>
+          </div>
+          <!-- <div class ="introSentence">
+            <h1 class ="blackBackgroundText bodyLarge2">Frontend, Backend, and Software Programmer at your service</h1>
+          </div> -->
+          <!-- <button type="button" name="button" class ="ProjectsJump flavorColor roundedBox raiseButton buttonHover" onclick="scrollScreen('Projects',true)">
             <span class ="buttonContentContainer">
               <span class ="callToActionContainer centerDiv">
                 <p class ="blackBackgroundText bodyLarge6">
@@ -96,14 +111,14 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="blackBackgroundIcon dimensionFit"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
               </div>
             </span>
-          </button>
+          </button> -->
         </div>
-        <video autoplay muted loop id="myVideo" class="introRoll">
+        <!-- <video autoplay muted loop id="myVideo" class="introRoll">
           <source src="images/project_reel.mp4" type="video/mp4" class="heroBarVideo reelSource">
-          </video>
+          </video> -->
       </div>
       <!-- Talk about graduation and work experience -->
-      <div class = "block dropShadow infoBlock" id="Experience">
+    <!-- div class = "block dropShadow infoBlock" id="Experience">
         <div class ="cover forceCenter infoBlock">
                     <h1 class ="blockLabel forceCenter bodyLarge3">Experience</h1>
         </div>
@@ -157,41 +172,8 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Talk about skillset with languages, applications, frameworks, etc -->
-      <div class = "block dropShadow infoBlock" id="Skills">
-        <div class ="cover forceCenter infoBlock">
-                    <h1 class ="blockLabel forceCenter bodyLarge3">Skills</h1>
-        </div>
-        <div class = "blockHeading forceCenter dropShadow infoBlock">
-          <div class="headingIconContainer forceCenter">
-            <svg id="_172558_star_icon" data-name="172558_star_icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 101 101">
-              <rect id="Rectangle_17" data-name="Rectangle 17" fill="none"/>
-              <path id="Path_14" data-name="Path 14" d="M46.744,3.553,58.2,33.257l31.79,1.714L65.277,55.042l8.192,30.764L46.744,68.51l-26.727,17.3,8.194-30.764L3.5,34.97l31.79-1.714Z" transform="translate(3.54 3.593)" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
-            </svg>
-          </div>
-        </div>
-        <div class =" blockContent skillSet baseMargin">
-          <ul>
-            <% skills.forEach(function(skill){%>
-              <li class ="inlineList">
-                <div class ="skillName">
-                  <div class="skillIconContainer inlineList">
-                    <%- skill.icon %>
-                  </div>
-                  <p class ="inlineList"><%=skill.name%></p>
-                </div>
-                <div class ="skillMastery">
-                  <div class = "bar">
-                    <div style= "<%= `width:${skill.mastery%101}%;` %>" class ="amount flavorColor"></div>
-                  </div>
-                  <p>Mastery</p>
-                </div>
-              </li>
-            <%})%>
-          </ul>
-        </div>
-      </div>
       <!-- Talk about projects that I had a place in current or in the past -->
       <div class = "block dropShadow infoBlock" id="Projects">
         <div class ="cover forceCenter infoBlock">
@@ -283,8 +265,41 @@
           </div>
         </div>
       </div>
+      <div class = "block dropShadow infoBlock" id="Skills">
+        <div class ="cover forceCenter infoBlock">
+                    <h1 class ="blockLabel forceCenter bodyLarge3">Skills</h1>
+        </div>
+        <div class = "blockHeading forceCenter dropShadow infoBlock">
+          <div class="headingIconContainer forceCenter">
+            <svg id="_172558_star_icon" data-name="172558_star_icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 101 101">
+              <rect id="Rectangle_17" data-name="Rectangle 17" fill="none"/>
+              <path id="Path_14" data-name="Path 14" d="M46.744,3.553,58.2,33.257l31.79,1.714L65.277,55.042l8.192,30.764L46.744,68.51l-26.727,17.3,8.194-30.764L3.5,34.97l31.79-1.714Z" transform="translate(3.54 3.593)" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <div class =" blockContent skillSet baseMargin">
+          <ul>
+            <% skills.forEach(function(skill){%>
+              <li class ="inlineList">
+                <div class ="skillName">
+                  <div class="skillIconContainer">
+                    <%- skill.icon %>
+                  </div>
+                  <p class ="inlineList"><%=skill.name%></p>
+                </div>
+                <!-- <div class ="skillMastery">
+                  <div class = "bar">
+                    <div style= "<%= `width:${skill.mastery%101}%;` %>" class ="amount flavorColor"></div>
+                  </div>
+                  <p>Mastery</p>
+                </div> -->
+              </li>
+            <%})%>
+          </ul>
+        </div>
+      </div>
       <!-- Talk about myself: what I am interested in, why I am doing this, etc -->
-      <div class = "block dropShadow infoBlock" id="About">
+      <!-- <div class = "block dropShadow infoBlock" id="About">
         <div class ="cover forceCenter infoBlock">
                           <h1 class ="blockLabel forceCenter bodyLarge3">About Me</h1>
         </div>
@@ -318,7 +333,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Contact Form -->
       <div class = "block dropShadow infoBlock" id="Contact">
         <div class ="cover forceCenter infoBlock">
