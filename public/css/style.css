@@ -550,6 +550,22 @@ container when the screen is resized. Container must have a defined height, howe
 
 /* /////////////////////////////////////////////// */
 /* Header */
+@media only screen and (min-width: 781px){
+  .bigHeaderIcon{
+    display: block;
+  }
+  .smallHeaderIcon{
+    display: none;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .bigHeaderIcon{
+    display: none;
+  }
+  .smallHeaderIcon{
+    display: block;
+  }
+}
 .fa-bars{
   flex:50%;
   color:white;
